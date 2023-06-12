@@ -1,7 +1,8 @@
 # PetManager 🐶🐱
+
 This project contains a sample ASP.NET Core app. This app is an example of the article I produced for the Telerik Blog (telerik.com/blogs).
 
-PetManager is a minimal API built using .NET 7 that allows you to manage pets using a SQLite database. 
+PetManager is a minimal API built using .NET 7 that allows you to manage pets using a SQLite database.
 It provides basic CRUD (Create, Read, Update, Delete) operations for pet entities.
 
 ## Requirements
@@ -10,14 +11,14 @@ Before running the PetManager project, ensure that you have the following depend
 
 - .NET 7 SDK: https://dotnet.microsoft.com/download/dotnet/7.0
 
-## 🥏 Getting Started 
+## 🥏 Getting Started
 
 To download and run the PetManager project, follow these steps:
 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/zangassis/my-daily-blog.git
+   git clone https://github.com/zangassis/pet-manager.git
    ```
 
 2. Navigate to the project directory:
@@ -83,7 +84,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
 This will create a new pet named "Max" with the species "Dog" and age 3.
 
-## 🌟 Contributing 
+## 🌟 Contributing
 
 Contributions to the PetManager project are welcome! If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository: https://github.com/your-username/PetManager/issues
 
