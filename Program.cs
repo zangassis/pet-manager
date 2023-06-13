@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<PetDbContext>();
+builder.Services.AddSingleton<PetRepository>();
+builder.Services.Configure<ConnectionString>(builder.Configuration.GetSection("ConnectionStrings"));
 
 var app = builder.Build();
 
@@ -26,6 +28,15 @@ app.MapGet("/pets", (PetDbContext db) =>
         var owner = owners.SingleOrDefault(o => o.Id == petItem.OwnerId);
         petItem.Owner = owner;
     }
+    return Results.Ok(pets);
+});
+
+app.MapGet("/pets/viadapper", async (PetRepository db) =>
+{
+    var pets = await db.GetAllPets();
+    foreach (var pet in pets)
+        pet.Owner = await db.GetOwner(pet.OwnerId);
+
     return Results.Ok(pets);
 });
 
