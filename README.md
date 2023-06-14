@@ -86,13 +86,13 @@ This will create a new pet named "Max" with the species "Dog" and age 3.
 
 ## 🌟 Contributing
 
-Contributions to the PetManager project are welcome! If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository: https://github.com/your-username/PetManager/issues
+Contributions to the PetManager project are welcome! If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository: https://github.com/zangassis/pet-manager/issues
 
 When contributing code, please follow the existing code style and submit a pull request with your changes.
 
 ## ⚖ License
 
-The PetManager project is licensed under the MIT License. You can find more information in the [LICENSE](https://github.com/your-username/PetManager/blob/main/LICENSE) file.
+The PetManager project is licensed under the MIT License. You can find more information in the [LICENSE](https://github.com/zangassis/pet-manager/blob/main/LICENSE) file.
 
 ## 📞 Contact
 
