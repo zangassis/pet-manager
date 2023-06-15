@@ -18,7 +18,7 @@ public class PetRepository
     {
         using (_dbConnection)
         {
-            string query = "SELECT * FROM pet";
+            string query = "select * from pet";
 
             var pets = await _dbConnection.QueryAsync<PetDto>(query);
             return pets.ToList();
